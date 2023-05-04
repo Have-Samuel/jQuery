@@ -54,3 +54,16 @@ $('input'); // returns all the inputs
 $('input').val(); // returns the value of the first input
 $('input').eq(0).val('BAMBOOZLED'); // changes the value of the first input
 $('input').val(''); // changes the value of all inputs to empty string
+
+// Using CLASS() and CSS()
+const anotherStyle = { color: 'magenta', 'font-size': '20px', 'text-shadow': '1px 1px 1px red' };
+
+$('a').css(anotherStyle); // Links change
+
+// addClass
+$('h1').addClass('highlight'); // Takes Effect
+
+$('li').addClass('highlight');
+
+// removeClass
+$('li').removeClass('highlight');
