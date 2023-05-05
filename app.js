@@ -57,7 +57,8 @@ $('a').attr('href', 'http://www.chichennuggets.com'); // changes the href of all
 $('input'); // returns all the inputs
 $('input').val(); // returns the value of the first input
 $('input').eq(0).val('BAMBOOZLED'); // changes the value of the first input
-$('input').val(''); // changes the value of all inputs to empty string
+$('input').val('Chicken Boyz For Life'); // changes the value of all inputs to Chicken Boyz For Life
+// $('input').val(''); // Resets the value of all inputs
 
 // Using CLASS() and CSS()
 const anotherStyle = { color: 'magenta', 'font-size': '20px', 'text-shadow': '1px 1px 1px red' };
