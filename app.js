@@ -53,7 +53,6 @@ $('a').attr('href', 'http://www.chichennuggets.com'); // changes the href of all
 
 // $('img').attr(attrImgs1); // changes the src of all images
 
-
 // Using VAL()
 $('input'); // returns all the inputs
 $('input').val(); // returns the value of the first input
