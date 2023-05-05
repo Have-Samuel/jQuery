@@ -45,9 +45,14 @@ $('a').attr('href'); // returns the href of the first a tag
 $('a').attr('href', 'http://www.chichennuggets.com'); // changes the href of all a tags
 
 // Changing the img src to have one image
-const attImgs = { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/La_R%C3%A9union_department_relief_location_map.jpg/512px-La_R%C3%A9union_department_relief_location_map.jpg ', alt: 'Lava Flow' };
+// const attImgs = { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/La_R%C3%A9union_department_relief_location_map.jpg/512px-La_R%C3%A9union_department_relief_location_map.jpg ', alt: 'Lava Flow' };
 
-$('img').attr(attImgs); // changes the src of all images
+// $('img').attr(attImgs); // changes the src of all images
+
+// const attrImgs1 = { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reunion_2004_1.jpg/440px-Reunion_2004_1.jpg ', alt: 'Lava Flow' };
+
+// $('img').attr(attrImgs1); // changes the src of all images
+
 
 // Using VAL()
 $('input'); // returns all the inputs
