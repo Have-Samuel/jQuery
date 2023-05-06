@@ -138,5 +138,7 @@ $('li').after('<bold>Hello!</bold>'); // Adds the bold after each li
 // Before
 $('li').before('<bold>Crazy!</bold>'); // Adds the bold before each li
 
-// // Remove
-// $('h1').remove(); // Removes the h1
+// Remove
+$('h1').remove(); // Removes the h1
+
+$('img').remove(); // Removes all the imgs
