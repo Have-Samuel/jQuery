@@ -147,6 +147,11 @@
 // $('img').remove(); // Removes all the imgs
 
 // EVENTS
-$('img').on('click', function () {
-  alert('Hello!')
+// IN-BUILT-CLICK METHOD
+$('img').click(function () {
+  alert('Hello!'); // Alerts Hello! when the img is clicked
+});
+
+$('img').on('mouseenter', function() {
+  console.log('Mouse Enter!');  // Logs Mouse Enter! when the mouse enters the img
 });
