@@ -1,0 +1,7 @@
+.highlight {
+  color: rgb(0, 4, 255);
+  border: 2px solid rgb(22, 13, 12);
+  font-size: 50px;
+  text-align: center;
+  padding: 1rem;
+}
