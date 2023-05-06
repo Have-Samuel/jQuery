@@ -160,3 +160,7 @@ $('img').on('mouseenter', function() {
 $('img').on('mouseleave', function () {
   $(this).css('border', '4px solid purple');
 });
+
+$('img').on('mouseleave', function () {
+  $(this).remove();
+});
