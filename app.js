@@ -61,9 +61,18 @@ $('input').val('Chicken Boyz For Life'); // changes the value of all inputs to C
 // $('input').val(''); // Resets the value of all inputs
 
 // Using CLASS() and CSS()
-const anotherStyle = { color: 'magenta', 'font-size': '20px', 'text-shadow': '1px 1px 1px red' };
-
-$('a').css(anotherStyle); // Links change
+const anotherStyle = {
+  color: 'magenta',
+  'font-size': '20px',
+  'text-shadow': '0 0 2px black',
+  'text-decoration': 'none',
+  border: '2px solid black',
+  padding: '2px',
+  margin: '10px',
+  'border-radius': '10px',
+};
+$('a').css(anotherStyle); // All links change
+// $('a').eq(3).css(anotherStyle); // Link change
 
 // addClass
 $('h1').addClass('highlight'); // Takes Effect
