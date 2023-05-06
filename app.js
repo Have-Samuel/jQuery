@@ -75,70 +75,92 @@
 // // $('a').eq(3).css(anotherStyle); // Link change
 
 // // Using ADDCLASS(), REMOVECLASS(), and TOGGLECLASS()
-$('h1').addClass('highlight'); // Takes Effect
+// $('h1').addClass('highlight'); // Takes Effect
 
-$('li').addClass('highlight');
+// $('li').addClass('highlight');
 
-// removeClass
-// $('li').removeClass('highlight');
+// // removeClass
+// // $('li').removeClass('highlight');
+// // // Removes the class
+
+// // toggleClass
+// $('li').toggleClass('highlight');
+// // Removes the class
+// $('li').toggleClass('highlight');
+// // Adds the class
+// $('li').toggleClass('highlight');
 // // Removes the class
 
-// toggleClass
-$('li').toggleClass('highlight');
-// Removes the class
-$('li').toggleClass('highlight');
-// Adds the class
-$('li').toggleClass('highlight');
-// Removes the class
+// // Chaining Methods
+// const $heading = $('h1');
 
-// Chaining Methods
-const $heading = $('h1');
+// $heading.text('Chaining is funny in JQUERY')
+// .addClass('highlight').css('background-color', 'teal');
 
-$heading.text('Chaining is funny in JQUERY').addClass('highlight').css('background-color', 'teal');
+// // Next, Previous, Parent
+// const $specialLi = $('li').eq(3);
 
-// Next, Previous, Parent
-const $specialLi = $('li').eq(3);
+// $specialLi.next(); // Gives the next element
 
-$specialLi.next(); // Gives the next element
+// $specialLi.prev(); // Gives the previous element
 
-$specialLi.prev(); // Gives the previous element
+// // Parent Method
+// $specialLi.parent(); // Returns the parent UL
 
-// Parent Method
-$specialLi.parent(); // Returns the parent UL
+// // $('ul');
+// // li.toclevel-1.tocsection-1
+// // li.toclevel-1.tocsection-2
+// // li.toclevel-1.tocsection-3
+// // li.toclevel-1.tocsection-4
+// // li.toclevel-1.tocsection-5
+// // li.toclevel-1.tocsection-6
+// // li.toclevel-1.tocsection-7
 
-// $('ul');
-// li.toclevel-1.tocsection-1
-// li.toclevel-1.tocsection-2
-// li.toclevel-1.tocsection-3
-// li.toclevel-1.tocsection-4
-// li.toclevel-1.tocsection-5
-// li.toclevel-1.tocsection-6
-// li.toclevel-1.tocsection-7
+// $('ul').children('li');
+// $('ul').children('a'); // Returns nothing
 
-$('ul').children('li');
-$('ul').children('a'); // Returns nothing
+// // We Use Find() Method to find the a tags inside the li's
+// $('ul').find('a'); // Returns all the a tags inside the li's
 
-// We Use Find() Method to find the a tags inside the li's
-$('ul').find('a'); // Returns all the a tags inside the li's
+// // Append, Prepend
+// $('ul').append('<li class="highlight">I am the last li</li>');
+// Adds the li to the end of the ul
 
-// Append, Prepend
-$('ul').append('<li class="highlight">I am the last li</li>'); // Adds the li to the end of the ul
+// // select all li's and append a checkbox
+// $('li').append('<input type="checkbox">'); // Adds the checkbox to the end of the li
 
-// select all li's and append a checkbox
-$('li').append('<input type="checkbox">'); // Adds the checkbox to the end of the li
+// // select all li's and prepend a checkbox
+// $('li').prepend('<input type="checkbox">'); // Adds the checkbox to the beginning of the li
 
-// select all li's and prepend a checkbox
-$('li').prepend('<input type="checkbox">'); // Adds the checkbox to the beginning of the li
+// // Using appendTo() and prependTo();
+// $('<h1>THIS IS A NEW H1</h1>').css('color', 'navy').appendTo('p');
+// Adds the h1 to the end of the p
 
-// Using appendTo() and prependTo();
-$('<h1>THIS IS A NEW H1</h1>').css('color', 'navy').appendTo('p'); // Adds the h1 to the end of the p
+// // After
+// $('li').after('<bold>Hello!</bold>'); // Adds the bold after each li
+// // Before
+// $('li').before('<bold>Crazy!</bold>'); // Adds the bold before each li
 
-// After
-$('li').after('<bold>Hello!</bold>'); // Adds the bold after each li
-// Before
-$('li').before('<bold>Crazy!</bold>'); // Adds the bold before each li
+// // Remove
+// $('h1').remove(); // Removes the h1
 
-// Remove
-$('h1').remove(); // Removes the h1
+// $('img').remove(); // Removes all the imgs
 
-$('img').remove(); // Removes all the imgs
+// EVENTS
+// IN-BUILT-CLICK METHOD
+$('img').click(function () {
+  alert('Hello!'); // Alerts Hello! when the img is clicked
+});
+
+$('img').on('mouseenter', function() {
+  console.log('Mouse Enter!');  // Logs Mouse Enter! when the mouse enters the img
+});
+
+// Using THIS
+$('img').on('mouseleave', function () {
+  $(this).css('border', '4px solid purple');
+});
+
+$('img').on('mouseleave', function () {
+  $(this).remove();
+});
