@@ -97,8 +97,11 @@ const $heading = $('h1');
 $heading.text('Chaining is funny in JQUERY').addClass('highlight').css('background-color', 'teal');
 
 // Next, Previous, Parent
-const $specialLi = $('li');
+const $specialLi = $('li').eq(3);
 
-$specialLi.eq(3).next(); // Gives the next element
+$specialLi.next(); // Gives the next element
 
-$specialLi.eq(3).prev(); // Gives the previous element
+$specialLi.prev(); // Gives the previous element
+
+// Parent Method
+$specialLi.parent(); // Returns the parent UL
