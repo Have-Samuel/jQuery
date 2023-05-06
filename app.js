@@ -90,3 +90,8 @@ $('li').toggleClass('highlight');
 // Adds the class
 $('li').toggleClass('highlight');
 // Removes the class
+
+// Chaining Methods
+const $heading = $('h1');
+
+$heading.text('Chaining is funny in JQUERY').addClass('highlight').css('background-color', 'teal');
