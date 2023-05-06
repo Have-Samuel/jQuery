@@ -123,3 +123,6 @@ $('ul').find('a'); // Returns all the a tags inside the li's
 
 // Append, Prepend, Before, After
 $('ul').append('<li class="highlight">I am the last li</li>'); // Adds the li to the end of the ul
+
+// select all li's amd append a checkbox
+$('li').append('<input type="checkbox">');
