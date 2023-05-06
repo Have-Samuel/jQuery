@@ -121,7 +121,7 @@ $('ul').children('a'); // Returns nothing
 // We Use Find() Method to find the a tags inside the li's
 $('ul').find('a'); // Returns all the a tags inside the li's
 
-// Append, Prepend, Before, After
+// Append, Prepend
 $('ul').append('<li class="highlight">I am the last li</li>'); // Adds the li to the end of the ul
 
 // select all li's and append a checkbox
@@ -129,3 +129,14 @@ $('li').append('<input type="checkbox">'); // Adds the checkbox to the end of th
 
 // select all li's and prepend a checkbox
 $('li').prepend('<input type="checkbox">'); // Adds the checkbox to the beginning of the li
+
+// Using appendTo() and prependTo();
+$('<h1>THIS IS A NEW H1</h1>').css('color', 'navy').appendTo('p'); // Adds the h1 to the end of the p
+
+// After
+$('li').after('<bold>Hello!</bold>'); // Adds the bold after each li
+// Before
+$('li').before('<bold>Crazy!</bold>'); // Adds the bold before each li
+
+// // Remove
+// $('h1').remove(); // Removes the h1
