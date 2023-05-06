@@ -155,3 +155,8 @@ $('img').click(function () {
 $('img').on('mouseenter', function() {
   console.log('Mouse Enter!');  // Logs Mouse Enter! when the mouse enters the img
 });
+
+// Using THIS
+$('img').on('mouseleave', function () {
+  $(this).css('border', '4px solid purple');
+});
