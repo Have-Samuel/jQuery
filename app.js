@@ -120,3 +120,6 @@ $('ul').children('a'); // Returns nothing
 
 // We Use Find() Method to find the a tags inside the li's
 $('ul').find('a'); // Returns all the a tags inside the li's
+
+// Append, Prepend, Before, After
+$('ul').append('<li class="highlight">I am the last li</li>'); // Adds the li to the end of the ul
