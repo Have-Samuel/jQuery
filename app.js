@@ -95,3 +95,10 @@ $('li').toggleClass('highlight');
 const $heading = $('h1');
 
 $heading.text('Chaining is funny in JQUERY').addClass('highlight').css('background-color', 'teal');
+
+// Next, Previous, Parent
+const $specialLi = $('li');
+
+$specialLi.eq(3).next(); // Gives the next element
+
+$specialLi.eq(3).prev(); // Gives the previous element
