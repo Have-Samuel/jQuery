@@ -105,3 +105,18 @@ $specialLi.prev(); // Gives the previous element
 
 // Parent Method
 $specialLi.parent(); // Returns the parent UL
+
+// $('ul');
+// li.toclevel-1.tocsection-1
+// li.toclevel-1.tocsection-2
+// li.toclevel-1.tocsection-3
+// li.toclevel-1.tocsection-4
+// li.toclevel-1.tocsection-5
+// li.toclevel-1.tocsection-6
+// li.toclevel-1.tocsection-7
+
+$('ul').children('li');
+$('ul').children('a'); // Returns nothing
+
+// We Use Find() Method to find the a tags inside the li's
+$('ul').find('a'); // Returns all the a tags inside the li's
