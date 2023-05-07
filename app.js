@@ -148,22 +148,22 @@
 
 // EVENTS
 // IN-BUILT-CLICK METHOD
-$('img').click(function () {
-  alert('Hello!'); // Alerts Hello! when the img is clicked
-});
+// $('img').click(function () {
+//   alert('Hello!'); // Alerts Hello! when the img is clicked
+// });
 
-$('img').on('mouseenter', function() {
-  console.log('Mouse Enter!');  // Logs Mouse Enter! when the mouse enters the img
-});
+// $('img').on('mouseenter', function() {
+//   console.log('Mouse Enter!');  // Logs Mouse Enter! when the mouse enters the img
+// });
 
 // Using THIS
 $('img').on('mouseleave', function () {
   $(this).css('border', '4px solid purple');
 });
 
-$('img').on('mouseleave', function () {
-  $(this).remove();
-});
+// $('img').on('mouseleave', function () {
+//   $(this).remove();
+// });
 
 // Adding Events
 $('#add-input').on('click', function () {
@@ -178,4 +178,22 @@ $('input').on('focus', function () {
 // Event Delegation
 $('form').on('focus', 'input', function () {
   $(this).val('ALOKALOKA');
+});
+
+// FADEOUT, FADEIN
+// $('img').on('click', function () {
+//   $(this).fadeOut(5000, function () {
+//     $(this).remove();
+//   });
+// });
+
+// ANIMATE
+$('img').on('click', function () {
+  $(this).animate({
+    opacity: 0.25,
+    // width: '50%',
+    // height: '50%',
+  }, 2000, function () {
+    $(this).remove();
+  });
 });
