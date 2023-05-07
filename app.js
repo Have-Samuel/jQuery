@@ -164,3 +164,7 @@ $('img').on('mouseleave', function () {
 $('img').on('mouseleave', function () {
   $(this).remove();
 });
+
+$('#add-input').on('click', function() {
+  $('form').append('<input type="text"/>')
+});
