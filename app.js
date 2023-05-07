@@ -165,6 +165,12 @@ $('img').on('mouseleave', function () {
   $(this).remove();
 });
 
-$('#add-input').on('click', function() {
-  $('form').append('<input type="text"/>')
+// Adding Events
+$('#add-input').on('click', function () {
+  $('form').append('<input type="text"/>');
+});
+
+// Changing the Input word on focus
+$('input').on('focus', function () {
+  $(this).val('ALOKALOKA');
 });
