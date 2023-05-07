@@ -174,3 +174,8 @@ $('#add-input').on('click', function () {
 $('input').on('focus', function () {
   $(this).val('ALOKALOKA');
 });
+
+// Event Delegation
+$('form').on('focus', 'input', function () {
+  $(this).val('ALOKALOKA');
+});
