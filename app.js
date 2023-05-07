@@ -60,7 +60,7 @@
 // $('input').val('Chicken Boyz For Life'); // changes the value of all inputs
 // // $('input').val(''); // Resets the value of all inputs
 
-// // Using CLASS() and CSS()
+// Using CLASS() and CSS()
 // const anotherStyle = {
 //   color: 'magenta',
 //   'font-size': '20px',
