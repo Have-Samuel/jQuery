@@ -180,9 +180,20 @@ $('form').on('focus', 'input', function () {
   $(this).val('ALOKALOKA');
 });
 
-// FADEOUT
+// FADEOUT, FADEIN
+// $('img').on('click', function () {
+//   $(this).fadeOut(5000, function () {
+//     $(this).remove();
+//   });
+// });
+
+// ANIMATE
 $('img').on('click', function () {
-  $(this).fadeOut(5000, function () {
+  $(this).animate({
+    opacity: 0.25,
+    // width: '50%',
+    // height: '50%',
+  }, 2000, function () {
     $(this).remove();
   });
 });
