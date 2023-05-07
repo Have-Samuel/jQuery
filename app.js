@@ -60,7 +60,7 @@
 // $('input').val('Chicken Boyz For Life'); // changes the value of all inputs
 // // $('input').val(''); // Resets the value of all inputs
 
-// // Using CLASS() and CSS()
+// Using CLASS() and CSS()
 // const anotherStyle = {
 //   color: 'magenta',
 //   'font-size': '20px',
@@ -157,43 +157,43 @@
 // });
 
 // Using THIS
-$('img').on('mouseleave', function () {
-  $(this).css('border', '4px solid purple');
-});
-
 // $('img').on('mouseleave', function () {
-//   $(this).remove();
+//   $(this).css('border', '4px solid purple');
 // });
 
-// Adding Events
-$('#add-input').on('click', function () {
-  $('form').append('<input type="text"/>');
-});
+// // $('img').on('mouseleave', function () {
+// //   $(this).remove();
+// // });
 
-// Changing the Input word on focus
-$('input').on('focus', function () {
-  $(this).val('ALOKALOKA');
-});
+// // Adding Events
+// $('#add-input').on('click', function () {
+//   $('form').append('<input type="text"/>');
+// });
 
-// Event Delegation
-$('form').on('focus', 'input', function () {
-  $(this).val('ALOKALOKA');
-});
+// // Changing the Input word on focus
+// $('input').on('focus', function () {
+//   $(this).val('ALOKALOKA');
+// });
 
-// FADEOUT, FADEIN
+// // Event Delegation
+// $('form').on('focus', 'input', function () {
+//   $(this).val('ALOKALOKA');
+// });
+
+// // FADEOUT, FADEIN
+// // $('img').on('click', function () {
+// //   $(this).fadeOut(5000, function () {
+// //     $(this).remove();
+// //   });
+// // });
+
+// // ANIMATE
 // $('img').on('click', function () {
-//   $(this).fadeOut(5000, function () {
+//   $(this).animate({
+//     opacity: 0.25,
+//     // width: '50%',
+//     // height: '50%',
+//   }, 2000, function () {
 //     $(this).remove();
 //   });
 // });
-
-// ANIMATE
-$('img').on('click', function () {
-  $(this).animate({
-    opacity: 0.25,
-    // width: '50%',
-    // height: '50%',
-  }, 2000, function () {
-    $(this).remove();
-  });
-});
