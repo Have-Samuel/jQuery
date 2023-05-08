@@ -32,4 +32,5 @@ $(() => {
     const blue = $('.form-control').eq(2).val();
     $('body').css('background-color', `rgb(${red}, ${green}, ${blue})`);
   });
+
 });
