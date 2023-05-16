@@ -4,4 +4,7 @@ $(() => {
 
   // Add 'image-center' to the Image
   $('article img').addClass('image-center');
+
+  // Remove last paragraph
+  $('article p:last-child').remove();
 });
