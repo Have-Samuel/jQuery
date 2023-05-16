@@ -16,4 +16,14 @@ $(() => {
 
   // Empty the aside and add a new h2
   $('aside').empty().append('<h2>Sorry About The Previous Text!!</h2>');
+
+  // When the input values change, change the background color of the body
+  $('input').on('click', () => {
+    // alert('Hello!');
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+
+    $('body').css('background-color', `rgb(${red}, ${green}, ${blue})`);
+  });
 });
