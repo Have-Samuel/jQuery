@@ -7,4 +7,7 @@ $(() => {
 
   // Remove last paragraph
   $('article p:last-child').remove();
+
+  // Change font size of title
+  $('#title').css('font-size', Math.random() * 100);
 });
