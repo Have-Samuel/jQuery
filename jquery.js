@@ -10,4 +10,7 @@ $(() => {
 
   // Change font size of title
   $('#title').css('font-size', Math.random() * 100);
+
+  // Add an item to the list
+  $('ol').append('<li>My Name is Alokaloka</li>').css('color', 'green');
 });
