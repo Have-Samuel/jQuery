@@ -26,4 +26,8 @@ $(() => {
 
     $('body').css('background-color', `rgb(${red}, ${green}, ${blue})`);
   });
+
+  $('img').on('click', function () {
+    $(this).remove();
+  });
 });
