@@ -13,4 +13,7 @@ $(() => {
 
   // Add an item to the list
   $('ol').append('<li>My Name is Alokaloka</li>').css('color', 'green');
+
+  // Empty the aside and add a new h2
+  $('aside').empty().append('<h2>Sorry About The Previous Text!!</h2>');
 });
